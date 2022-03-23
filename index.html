@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ProjectManager</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="icon" href="/game.png">
+
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+
+    <script src="dist/app.js" defer></script>
+
+  </head>
+  <body>
+    <template id="Game-input">
+      <div class="top">
+      <form>
+        <div class="form-control">
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+        </div>
+        <div class="form-control">
+          <label for="description">Notes</label>
+          <textarea id="description" rows="3"></textarea>
+        </div>
+        <div class="form-control">
+          <label for="people">Rating</label>
+          <input type="number" id="rate" step="1" min="0" max="10" />
+        </div>
+        <button type="submit">Add Video Game</button>
+      </form>
+      <div class="title_">
+      <h1>My Gammer List</h1>
+    </div>
+    </div>
+    </template>
+    <template id="single-Game">
+      <li draggable="true" class="singleprj">
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+      </li>
+    </template>
+    <template id="Game-list">
+      <section class="Game">
+        <header>
+          <h2></h2>
+        </header>
+        <ul></ul>
+      </section>
+    </template>
+    <div id="app">
+      <div id="container">
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Allan,  sans-serif;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background-color: #15172b;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.5rem;
+
+}
+
+input,
+textarea {
+  font: sans-serif;
+  padding: 0.2rem 0.4rem;
+  width: 100%;
+  max-width: 30rem;
+  border: 1px solid #ccc;
+  background-color: #303245;
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+}
+
+
+button {
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 16px;
+  margin-top: 38px;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  width: 25%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+
+
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+  border-color: #a80041;
+}
+
+.Game {
+  margin: 1rem;
+  overflow-wrap: break-word;
+  overflow: auto;
+
+
+  /* border: 1px solid #ff0062; */
+}
+
+.Game header {
+  background-image: linear-gradient(-180deg, #f54958 0%, #ff0808 100%);
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#finished-Games {
+  border-color: #0044ff;
+}
+
+#finished-Games header {
+  background-image: linear-gradient(-180deg, #4882ff 0%, #1f00cf 100%);
+}
+
+.Game h2 {
+  margin: 0;
+  color: white;
+  
+}
+
+.Game ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.Game li {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  margin: 1rem;
+  background-color:#15172b ;
+}
+
+.Game li h2 {
+  color: #ff0062;
+  margin: 0.5rem 0;
+  font-size: 1.9rem;
+  text-align: center;
+
+}
+
+#finished-Games li h2 {
+  color: #0044ff;
+}
+
+.Game li h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0;
+  font-size: 1.4rem;
+
+}
+
+.droppable {
+  background: #ffe3ee;
+
+}
+
+#finished-Games .droppable {
+  background: #d6e1ff;
+}
+
+.singleprj {
+  border: 1px solid #757373;
+
+}
+#user-input {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #15172b;
+  border-radius: 20px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.title_ {
+font-family: "Montserrat";
+text-align: center;
+color: #FFF;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 50vh;
+letter-spacing: 1px;
+}
+
+h1 {
+background-image: url(https://media.giphy.com/media/ktmxSWoopE9Y4/giphy.gif);
+background-size: cover;
+color: transparent;
+-moz-background-clip: text;
+-webkit-background-clip: text;
+text-transform: uppercase;
+font-size: 120px;
+line-height: .75;
+margin: 10px 0;
+}
+/* styling my button */
+
+.white-mode {
+text-decoration: none;
+padding: 7px 10px;
+background-color: #122;
+border-radius: 3px;
+color: #FFF;
+transition: .35s ease-in-out;
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-family: "Montserrat";
+}
+
+.white-mode:hover {
+background-color: #FFF;
+color: #122;
+}
