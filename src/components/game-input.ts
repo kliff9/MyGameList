@@ -73,7 +73,7 @@ export class GameInput extends Component<HTMLDivElement, HTMLFormElement> {
   }
   @Autobind
   private submitHandler(event: Event) {
-    event.preventDefault(); // prevent HTTP Request
+    event.preventDefault(); 
     const userInput = this.gatherUserInput();
     if (Array.isArray(userInput)) {
       const [title, desc, rate] = userInput;
